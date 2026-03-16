@@ -1,6 +1,6 @@
 {
-  "version": "1.1.4",
-  "date": "2025-12-17",
+  "version": "1.1.6",
+  "date": "2026-03-16",
   "priority": "Normal",
-  "changelog": "- Added EZELS – Emergency Lighting System integration. \n - Upgraded the snapshot system — it can now take pictures of speeding vehicles. (Requires the screenshot-basic resource.) \n - Added a new Discord webhook that sends speeding snapshots with pictures. \n - Added Config.ForceExactObjectPosition to the config.lua file. Setting this to true forces the script to spawn objects at their exact saved coordinates, completely bypassing the default GTA 5 physics engine. (This is for custom props, becouse some custom props build in different ways) \n - Add and improve inventory item checking. \n - Fixed issue for ox_inventory if player drop anti_radar item, his still able to use it."
+  "changelog": "- Fixed an issue where placing 2–3 or more mobile camera props close to each other could break the placement if another prop’s UI was still active, making it impossible to remove the newly placed mobile camera. \n - Fixed an issue with the police scanner: officers could use the item while not in a vehicle, and if the scanner was on and the item was removed from the inventory, the scanner would continue working. \n - Fixed issue then is Config.UseDatabaseStorage = true - and you editing created camera settings and seved, wont saves changes to database."
 }
