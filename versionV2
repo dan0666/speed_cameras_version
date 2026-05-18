@@ -1,6 +1,6 @@
 {
-  "version": "1.1.6",
-  "date": "2026-03-16",
+  "version": "1.1.8",
+  "date": "2026-05-18",
   "priority": "Normal",
-  "changelog": "- Fixed an issue where placing 2–3 or more mobile camera props close to each other could break the placement if another prop’s UI was still active, making it impossible to remove the newly placed mobile camera. \n - Fixed an issue with the police scanner: officers could use the item while not in a vehicle, and if the scanner was on and the item was removed from the inventory, the scanner would continue working. \n - Fixed issue then is Config.UseDatabaseStorage = true - and you editing created camera settings and seved, wont saves changes to database."
+  "changelog": "- Fixed a critical server crash in the average speed zone penalty system caused by an undefined speed variable. \n - Fixed SQL errors when using the delete command for zones or stationary radars while `Config.UseDatabaseStorage` is set to `false`. \n - Added a new RP feature: speed cameras and mobile radars will now completely ignore vehicles without valid/readable license plates. (check in config.lua) \n - Fixed an ESX framework error (`attempt to index a nil value`) caused by empty inventory slots when checking for the anti-radar detector item on player load. \n - Fixed an issue where ESX officers had to relog to gain access to collect fines after changing their duty/job status; access now updates dynamically. \n - Fixed a bug in mobile radars where one speeding violation was incorrectly recorded twice in the radar's statistics. \n - Improved Billing integration for mobile radars: The UI now correctly displays the total accumulated fine amount with a "(Billing)" tag instead of "$0". It also hides the "Press H to collect" prompt and includes server-side protection to prevent money collection exploits when billing is active. "
 }
